@@ -14,9 +14,9 @@
             height: 100px;
             background: coral;
             transition :
-                transform 1s cubic-bezier(0.38,-0.57,0.63,1.54),
-                background 2s 1s linear;
-
+                transform 1s cubic-bezier(0.38,-0.57,0.63,1.54)
+         /*   , background 2s 1s linear;*/
+         
         }
 
             /*.box:hover {
@@ -33,13 +33,35 @@
         <div>
             <%--클래스로 선언한 부분의 디자인이 바뀐다.--%>
             <div class="box"></div>
+            <p class="message"></p>
 
-            <script>
+            <script>             
                 const box = document.querySelector('.box');
+                const message = document.querySelector('.message')
+
+                let isTransitionRunning = false;
+
                 box.addEventListener('click', () => {
-                    box.classList.toggle('box-action');
-                }
-                );
+                    if (!isTransitionRunning) {
+                        box.classList.toggle('box-action');
+                    }
+                    isTransitionRunning = true;
+                });
+
+                box.addEventListener('transitionstart', (e) => {
+                    console.log('${e.propertyName} START');
+                    message.innerText = 'START';
+                });
+
+                box.addEventListener('transitionend', (e) => {
+                    console.log('${e.propertyName} END');
+                    message.innerText = 'END';
+                    isTransitionRunning = false;
+                });
+
+                box.addEventListener('transitionrun', (e) => { console.log('${e.propertyName} RUN'); });
+
+                box.addEventListener('transitioncancel', (e) => { console.log('${e.propertyName} CANCEL'); });
             </script>
         </div>
     </form>
