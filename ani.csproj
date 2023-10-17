@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Animation.aspx" />
+    <Content Include="animation\01.html" />
+    <Content Include="animation\02.html" />
+    <Content Include="animation\images\walking-ilbuni.png" />
     <Content Include="Global.asax" />
     <Content Include="Image.aspx" />
     <Content Include="images\hand.svg.svg" />
@@ -75,6 +79,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animation.aspx.cs">
+      <DependentUpon>Animation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Animation.aspx.designer.cs">
+      <DependentUpon>Animation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -95,6 +106,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="animation\.DS_Store" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
