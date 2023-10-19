@@ -83,12 +83,17 @@
     <Content Include="section3-basic\section3-basic\waapi-basic\02.html" />
     <Content Include="section3-basic\section3-basic\waapi-basic\03.html" />
     <Content Include="section3-basic\section3-basic\waapi-basic\04.html" />
+    <Content Include="section3-basic\section3-basic\waapi-basic\05.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic-fin\._01.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic-fin\._02.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic-fin\._03.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._01.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._02.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._03.html" />
+    <Content Include="waapi-group\01.html" />
+    <Content Include="waapi-group\02.html" />
+    <Content Include="waapi-group\04.html" />
+    <Content Include="waapi-group\ilbuni-yoga.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -131,6 +136,7 @@
     <Content Include="section3-basic\__MACOSX\section3-basic\._waapi-basic-fin" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic-fin\._.DS_Store" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._.DS_Store" />
+    <Content Include="waapi-group\.DS_Store" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

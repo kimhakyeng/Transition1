@@ -18,22 +18,21 @@
 
 	<script>
 		const box = document.querySelector('.box');
+		const keyframes = [
+			{ transform: 'translateX(0)', opacity: 0 },
+			{ transform: 'translateX(-50px)', opacity: 1, offset: 0.6 },
+			{ transform: 'translate(200px)', opacity: 0.5 }
+		];
+		const options = {
+            duration: 2000,
+            easing: 'linear',
+            fill: 'forwards',
+            iterations: 3,
+            direction: 'alternate'
+		};
 		/*키프레임 , 옵션이 들어간다*/
-		box.animate(
-			[
-				{ transform: 'translateX(0)', opacity: 0},
-				{ transform: 'translateX(-50px)', opacity: 1 ,offset:0.6 },
-                { transform: 'translate(200px)', opacity: 0.5 }
-            ],
-			{
-				duration: 2000,
-				easing: 'linear',
-				fill: 'forwards',
-				iterations: 3,
-				direction: 'alternate'
-			}
-			
-		);
+        box.animate(keyframes, options);
+
 	</script>
 </body>
 </html>

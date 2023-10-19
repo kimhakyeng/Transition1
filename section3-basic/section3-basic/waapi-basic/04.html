@@ -17,7 +17,41 @@
 	<div class="box"></div>
 	
 	<script>
-		
+
+        const box = document.querySelector('.box');
+
+        const animation = box.animate(
+
+            [
+                { transform: 'translateX(0)', opacity: 0 },
+                { transform: 'translateX(-50px)', opacity: 1, offset: 0.6 },
+                { transform: 'translate(200px)', opacity: 0.5 }
+			],
+            {
+                duration: 1000,
+                easing: 'linear',
+                fill: 'forwards',
+                //iterations: 3,
+                //direction: 'alternate'
+            }
+		);
+
+		console.log(animation.finished);
+
+		/*애니메이션이 실행된 후 실행되는 then*/
+		animation.finished.then(
+			(data) => {
+				console.log('애니메이션 종료!');
+				console.log(data);
+			}
+		);
+
+		animation.ready.then(
+            (data) => {
+                console.log('애니메이션 시작!');
+                console.log(data);
+            }
+        );
 	</script>
 </body>
 </html>
