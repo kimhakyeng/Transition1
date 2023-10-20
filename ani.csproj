@@ -92,8 +92,10 @@
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._03.html" />
     <Content Include="waapi-group\01.html" />
     <Content Include="waapi-group\02.html" />
-    <Content Include="waapi-group\04.html" />
+    <Content Include="waapi-group\03.html" />
+    <Content Include="waapi-group\04Starfield.html" />
     <Content Include="waapi-group\ilbuni-yoga.png" />
+    <Content Include="waapi-group\Star.js" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
