@@ -18,6 +18,12 @@
 			border-radius: 50%;
 			background: white;
 		}
+
+            .star:nth-child(20n) {
+				width: 50px;
+				height: 50px;
+				background: url('./ilbuni-yoga.png') no-repeat 0 0/ cover;
+            }
 	</style>
 </head>
 <body>	
@@ -84,7 +90,15 @@
 
 		const groupEffect = new GroupEffect(effects);
 
-        document.timeline.play(groupEffect);
+		const animation = document.timeline.play(groupEffect);
+
+		window.addEventListener('click',()=> {
+			if (animation.playState == 'paused') {
+				animation.play();
+			} else {
+				animation.pause();
+            }
+		})
 	</script>
 
 	

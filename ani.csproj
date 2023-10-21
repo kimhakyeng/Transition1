@@ -96,6 +96,7 @@
     <Content Include="waapi-group\04Starfield.html" />
     <Content Include="waapi-group\ilbuni-yoga.png" />
     <Content Include="waapi-group\Star.js" />
+    <Content Include="waapi-path\01.html" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
