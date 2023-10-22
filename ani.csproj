@@ -97,6 +97,41 @@
     <Content Include="waapi-group\ilbuni-yoga.png" />
     <Content Include="waapi-group\Star.js" />
     <Content Include="waapi-path\01.html" />
+    <Content Include="waapi-scroll\01-basic\index.html" />
+    <Content Include="waapi-scroll\01-basic\main.css" />
+    <Content Include="waapi-scroll\01-basic\main.js" />
+    <Content Include="waapi-scroll\01-basic\office.jpg" />
+    <Content Include="waapi-scroll\01-basic\scroll-timeline.js" />
+    <Content Include="waapi-scroll\02-scroll-sample\01.css" />
+    <Content Include="waapi-scroll\02-scroll-sample\01.html" />
+    <Content Include="waapi-scroll\02-scroll-sample\01.js" />
+    <Content Include="waapi-scroll\02-scroll-sample\02.css" />
+    <Content Include="waapi-scroll\02-scroll-sample\02.html" />
+    <Content Include="waapi-scroll\02-scroll-sample\02.js" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\airplane.svg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\photo\photo01.jpg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\photo\photo02.jpg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\photo\photo03.jpg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\photo\photo04.jpg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\photo\photo05.jpg" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\route.svg" />
+    <Content Include="waapi-scroll\02-scroll-sample\scroll-timeline.js" />
+    <Content Include="waapi-scroll\03-landingpage\airplane.js" />
+    <Content Include="waapi-scroll\03-landingpage\gallery.js" />
+    <Content Include="waapi-scroll\03-landingpage\hello.js" />
+    <Content Include="waapi-scroll\03-landingpage\images\airplane.svg" />
+    <Content Include="waapi-scroll\03-landingpage\images\jeju.svg" />
+    <Content Include="waapi-scroll\03-landingpage\images\photo\photo01.jpg" />
+    <Content Include="waapi-scroll\03-landingpage\images\photo\photo02.jpg" />
+    <Content Include="waapi-scroll\03-landingpage\images\photo\photo03.jpg" />
+    <Content Include="waapi-scroll\03-landingpage\images\photo\photo04.jpg" />
+    <Content Include="waapi-scroll\03-landingpage\images\photo\photo05.jpg" />
+    <Content Include="waapi-scroll\03-landingpage\images\route.svg" />
+    <Content Include="waapi-scroll\03-landingpage\index.html" />
+    <Content Include="waapi-scroll\03-landingpage\main.css" />
+    <Content Include="waapi-scroll\03-landingpage\main.js" />
+    <Content Include="waapi-scroll\03-landingpage\scroll-timeline.js" />
+    <Content Include="waapi-scroll\03-landingpage\track.js" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -140,6 +175,12 @@
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic-fin\._.DS_Store" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._.DS_Store" />
     <Content Include="waapi-group\.DS_Store" />
+    <Content Include="waapi-scroll\.DS_Store" />
+    <Content Include="waapi-scroll\02-scroll-sample\.DS_Store" />
+    <Content Include="waapi-scroll\02-scroll-sample\images\.DS_Store" />
+    <Content Include="waapi-scroll\03-landingpage\.DS_Store" />
+    <Content Include="waapi-scroll\03-landingpage\.vscode\settings.json" />
+    <Content Include="waapi-scroll\03-landingpage\images\.DS_Store" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
