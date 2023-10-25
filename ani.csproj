@@ -90,6 +90,11 @@
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._01.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._02.html" />
     <Content Include="section3-basic\__MACOSX\section3-basic\waapi-basic\._03.html" />
+    <Content Include="SelfAnimation\Images\butterfly.svg" />
+    <Content Include="SelfAnimation\Images\Earth.svg" />
+    <Content Include="SelfAnimation\Images\path.svg" />
+    <Content Include="SelfAnimation\SelfAnimation1.html" />
+    <Content Include="SelfAnimation\Star.js" />
     <Content Include="waapi-group\01.html" />
     <Content Include="waapi-group\02.html" />
     <Content Include="waapi-group\03.html" />

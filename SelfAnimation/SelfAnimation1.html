@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .Earth {
+            position: absolute;
+            bottom:0px;
+        }
+
+        body {
+            overflow: hidden;
+            background-color:black;
+        }
+
+        .star {
+            position:absolute;
+            width: 3px;
+            height:3px;
+            font-size:0;
+            border-radius:50%;
+            background:white;           
+        }
+    </style>
+</head>
+<body>
+    <img class="Earth" src="Images/Earth.svg" alt="" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations-next.min.js"></script>
+
+    <!--모듈은 자체적 스코프 생성 접근이 불가-->
+    <script type="module">
+        import Star from './Star.js';
+
+        const numberOfStars = 210;
+        const canvasWidth = window.innerWidth;
+        const canvasHeight = window.innerHeight;
+        const zModifier = canvasHeight;
+        const effects = [];
+
+
+        let x, y, z;
+        let scale;
+        let keyframes, options;
+        let pointFrom, pointTo;
+        let star;
+
+
+        function set3DPoint(x, y, z) {
+            const scale = zModifier / (zModifier + z);
+            const x2D = x * scale;
+            const y2D = y * scale;
+
+            return [x2D, y2D, scale];
+        }
+
+        for (let i = 0; i < numberOfStars; i++) {
+            x = Math.random() * canvasWidth - canvasWidth*0.5;
+            y = Math.random() * canvasHeight - canvasHeight * 0.5;;
+            z = Math.random() * zModifier;
+
+            scale = zModifier / (zModifier + z);
+
+            pointFrom = set3DPoint(x, y, z);
+            pointTo = set3DPoint(x, y, z - zModifier);
+
+            star = new Star(i);
+
+            keyframes = [
+                {
+                    transform: `translate(${pointFrom[0]}px,${pointFrom[1]}px ) scale(${pointFrom[2]})`
+                }
+                ,
+                {
+                    transform: `translate(${pointTo[0]}px,${pointTo[1]}px ) scale(${pointTo[2]})`
+                }
+            ];
+
+            options = {
+                duration: 2000 / scale,
+                iterations: Infinity,
+                fill: 'both',
+                easing:'linear'
+            };
+
+            effects.push(new KeyframeEffect(star.element, keyframes, options));
+        }
+
+        const groupEffect = new GroupEffect(effects);
+        document.timeline.play(groupEffect);
+    </script>
+
+</body>
+</html>
